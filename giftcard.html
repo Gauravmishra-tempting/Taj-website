@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="giftcard.css">
+    <link rel="stylesheet" type="text/css" href="C:\Users\USER\Downloads\W3.CSS Downloads_files\w3schools30.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Unique Dining at Signature Restaurants | Royal Hotels</title>
+</head>
+<body>
+
+<!----Start navbar-->
+
+    <div>
+        <nav>
+          <div class="wrapper">
+              <div class="logo"><img src="C:\Users\USER\Desktop\gaurav main project o - level\O-level images\logo--Taj.png" style="width: 6%; height: 6%;">
+              <input type="radio" name="slide" id="menu-btn">
+              <input type="radio" name="slide" id="cancel-btn">
+          <ul class="nav-links">
+              <label for="cancel-btn" class="btn cancel-btn"><i class="fas fa-times"></i></label>
+              <li><a href="ourhotels.html">OUR HOTELS</a></li>
+              <li><a href="Dining.html">DINNIG</a></li>
+              <li><a href="wedding.html">WEDDINGS</a></li>
+              <li><a href="giftcard.html">GIFT CARDS</a></li>
+              <li><a href="tajholiday.html">TAJ HOLIDAYS</a></li>
+              <li>
+                  <a class="desktop-item">MEMBERSHIP PROGRAMS</a>
+                  <input type="checkbox" id="showdrop">
+                  <label for="showdrop" class="mobile-item">MEMBERSHIP PROGRAMS</label>
+                  <ul class="drop-menu">
+                      <li class="drop-menu1"><a href="thechamber">THE CHAMBER</a></li> 
+                      <li class="drop-menu2"><a href="neupass">NEUPASS</a></li> 
+                      <li class="drop-menu3"><a href="epicure">EPICURE</a></li> 
+                      <li class="drop-menu4"><a href="businessconnect">BUSINESS CONNECT</a></li>        
+                  </ul>
+              </li>
+              <li><a href="managebooking.html">MANAGE BOOKING</a></li>
+              <li><a href="signin.html">SIGN IN</a></li>&nbsp;&nbsp;
+              <li><a href="bookastay.html" class="primary-button">BOOK A STAY</a></li>
+          </ul>
+          <label for="menu-btn" class=" btn menu-btn"><i class="fas fa-bars"></i></label>
+         </div>
+        </nav>
+      </div>
+      
+
+
+<!----End navbar-->
+
+
+
+
+
+<!--Start slide show-->
+     
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src="C:\Users\USER\Desktop\gaurav main project o - level\O-level images\slidebanner_1695.jpg" style="width:100%; height:500px">
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="C:\Users\USER\Desktop\gaurav main project o - level\O-level images\slidebanner_2495.png" style="width:100%; height:500px">
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="C:\Users\USER\Desktop\gaurav main project o - level\O-level images\slidebanner_2600.jpg" style="width:100%; height:500px">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="C:\Users\USER\Desktop\gaurav main project o - level\O-level images\banner_default.png" style="width:100%; height:500px">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="C:\Users\USER\Desktop\gaurav main project o - level\O-level images\slidebanner_2494.png" style="width:100%; height:500px">
+  </div>
+  
+  <div class="prev" onclick="plusSlides(-1)">❮</div>
+  <div class="next" onclick="plusSlides(1)">❯</div>
+  
+  </div>
+
+  
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slides[slideIndex-1].style.display = "block";   
+    }
+  
+    var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000); // Change image every 5 seconds
+  }
+    </script>
+  
+  
+  
+
+
+
+<!--End slide show-->
+
+
+<!--strat text-->
+
+<br>
+<div>
+  <div class="text-gift">
+    <h3>NATURAL</h3>
+    <p class="paragraph-gift">
+      Thinking out of the Gift Box on the fly? Nothing speaks quite like 
+      a thoughtful gift for those special occasions when you want to thank 
+      someone and tell them how much they mean to you. But the best gifts 
+      in life rarely come in a box. They comprise alluring encounters and 
+      exquisite experiences that make precious memories — the kind that 
+      you return to over and over again. Taj Experiences eGift Cards 
+      feature artistic watercolour motifs in a range of themed design 
+      options that take inspiration from our iconic heritage and art 
+      and celebrate the myriad cultural traditions of our festivals, 
+      from Christmas baubles on mango trees to the fanous and kandeels 
+      that light up Eid and Diwali. Delivered instantly and redeemable 
+      immediately across Taj, SeleQtions and Vivanta hotels and Ama 
+      Trails & Stays in India, Taj Experiences eCards are the perfect 
+      gift for a birthday, engagement, wedding or festive celebration.
+    </p>
+  </div>
+</div>
+<br>
+<!--End text -->
+
+<!--start form -->
+<div>
+  <div class="giftcard">
+    <h3>Enter Gift Card Details</h3>
+    <br>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="John M. Doe" required>
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="john@example.com" required>
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street" required>
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="New York" required>
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="NY" required>
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="10001" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="John More Doe" required>
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September" required>
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2018" required>
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352" required>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+  </div>
+  <br>
+  <br>
+  
+   
+
+
+

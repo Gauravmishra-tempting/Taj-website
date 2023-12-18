@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Home.css">
+    <link rel="stylesheet" type="text/css" href="slide.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2020.css">
+    <link rel="stylesheet" type="text/css" href="C:\Users\USER\Downloads\W3.CSS Downloads_files\w3schools30.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-vivid.css">
+    <title>Luxury Hotel & Resorts in India & The world | Royal Hotels</title>
+    <style>
+          #more {display: none;}
+    </style>
+</head>
+<body>
+
+<!--Start navbar-->
+
+
+  <div>
+      <nav>
+        <div class="wrapper">
+            <div class="logo"><img src="C:\Users\USER\Desktop\gaurav main project o - level\O-level images\logo--Taj.png" style="width: 6%; height: 6%;">
+            <input type="radio" name="slide" id="menu-btn">
+            <input type="radio" name="slide" id="cancel-btn">
+        <ul class="nav-links">
+            <label for="cancel-btn" class="btn cancel-btn"><i class="fas fa-times"></i></label>
+            <li><a href="ourhotels.html">OUR HOTELS</a></li>
+            <li><a href="Dining.html">DINING</a></li>
+            <li><a href="wedding.html">WEDDINGS</a></li>
+            <li><a href="giftcard.html">GIFT CARDS</a></li>
+            <li><a href="tajholiday.html">TAJ HOLIDAYS</a></li>
+            <li>
+                <a class="desktop-item">MEMBERSHIP PROGRAMS</a>
+                <input type="checkbox" id="showdrop">
+                <label for="showdrop" class="mobile-item">MEMBERSHIP PROGRAMS</label>
+                <ul class="drop-menu">
+                    <li class="drop-menu1"><a href="thechamber">THE CHAMBER</a></li> 
+                    <li class="drop-menu2"><a href="neupass">NEUPASS</a></li> 
+                    <li class="drop-menu3"><a href="epicure">EPICURE</a></li> 
+                    <li class="drop-menu4"><a href="businessconnect">BUSINESS CONNECT</a></li>        
+                </ul>
+            </li> 
+            <li><a href="managebooking.html">MANAGE BOOKING</a></li>
+            <li><a href="signin.html">SIGN IN</a></li>&nbsp;&nbsp;
+            <li><a href="bookastay.html" class="primary-button">BOOK A STAY</a></li>
+        </ul>
+        <label for="menu-btn" class=" btn menu-btn"><i class="fas fa-bars"></i></label>
+       </div>
+      </nav>
+    </div>
+
+
+<!--End navbar-->
+
+
+
+<!--Start slide show-->
+
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src="C:\Users\USER\Desktop\gaurav main project o - level\O-level images\slide-image.jpg.jpeg" style="width:100%; height:500px">
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="C:\Users\USER\Desktop\gaurav main project o - level\O-level images\cq5dam.web.1280.1280 (2).jpeg" style="width:100%; height:500px">
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="C:\Users\USER\Desktop\gaurav main project o - level\O-level images\shutterstock-137150198-kw-260417-A-view-of-the-beautiful-hotels-in-Lake-Pichola-in-Udaipur (1).jpg" style="width:100%; height:500px">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="C:\Users\USER\Desktop\gaurav main project o - level\O-level images\cq5dam.web.1280.1280.jpeg" style="width:100%; height:500px">
+  </div>
+  
+  <div class="prev" onclick="plusSlides(-1)">❮</div>
+  <div class="next" onclick="plusSlides(1)">❯</div>
+  
+  </div>
+  <br>
+  
+  
+  <script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slides[slideIndex-1].style.display = "block";   
+  }
+
+  var myIndex = 0;
+carousel();
+
+function carousel() {
+var i;
+var x = document.getElementsByClassName("mySlides");
+for (i = 0; i < x.length; i++) {
+  x[i].style.display = "none";  
+}
+myIndex++;
+if (myIndex > x.length) {myIndex = 1}    
+x[myIndex-1].style.display = "block";  
+setTimeout(carousel, 4000); // Change image every 5 seconds
+}
+  </script>
+
+
+
+<!--End slide show-->
+
+
+<div class="banner">
+  <div class="img">
+  <img src="C:\Users\USER\Desktop\gaurav main project o - level\O-level images\cq5dam.web.323.323.png">
+  <h4>LOYALTY PROGRAM</h4>
+</div>
+  <div class="img-1">
+    <img src="C:\Users\USER\Desktop\gaurav main project o - level\O-level images\icons-desktop-mobile-100x100-04-01.png">
+    <h4>Exclusive Member Rates</h4>
+  </div>
+  <div class="img-2">
+    <img src="C:\Users\USER\Desktop\gaurav main project o - level\O-level images\icons-desktop-mobile-100x100-05-01.png">
+    <h4>Special Offers on
+      Stays & Dining</h4>
+  </div>
+  <div class="img-3">
+    <img src="C:\Users\USER\Desktop\gaurav main project o - level\O-level images\icons-desktop-mobile-100x100-06-01.png">
+    <h4>Earn and Redeem
+      across multiple
+      brands</h4>
+  </div>
+  <div class="img-4">
+    <img src="C:\Users\USER\Desktop\gaurav main project o - level\O-level images\icons-desktop-mobile-100x100-07-01.png">
+    <h4>Minimum NeuCoins
+      with every booking
+      1 NeuCoin = ₹ 1</h4>
+  </div>
+  <div class="buttonneupass">
+    <h2>BECOME A MEMBER!</h2>
+    
+    <a href="signin.html"><button class="neupassbutton">ENROLL NOW</button></a>
+  </div>
+  </div>
+</div>
+
+
+
+
+      
+ 
+
+
+<!--Start about us-->
+
+<div>
+  <div class="about-top">
+    <div class="container flex">
+      <div class="left">
+        <div class="heading">
+          <h1>WELCOME</h1>
+          <h2>Royal hotel</h2>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Molestias dolorum autem quaerat ipsa! Obcaecati, ex quae? Numquam, 
+          aliquam quaerat at eius obcaecati quae nemo commodi ipsum praesentium, 
+          iste provident nisi? Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+          Laudantium alias unde nulla harum repellendus! Sit nihil delectus sint, 
+          adipisci alias ratione velit facere eum! Facere, earum dolorum. Facilis, unde similique!</p>
+          <a href="aboutsecondarybutton" class="secondary-button">ABOUT US</a>
+      </div>
+      <div class="right">
+        <img src="C:\Users\USER\Desktop\gaurav main project o - level\O-level images\exterior-dusk.png" width="500" height="350">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--End about us-->
+
+
+
+
+<!--Start popular destination images-->
+
+
+    
+
+
+
+
+
+
+
+<!----End popular destination images---->
+
+
+ 
+<!----Start happening images Slider---->
+
+<br>
+
+<div>
+  <div class="happening-heading">
+    <h1>HAPPENINGS</h1>
+  </div>
+
+  <br> <br> <br> 
+  
+  <div class="happening-images">
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <img src="C:\Users\USER\Desktop\gaurav main project o - level\O-level images\cq5dam.web.512.512.jpeg" style="width: 100%; height: 320px" alt="">
+        <h4 class="happening-text-1">Taj Wayanad Resort & Spa</h4>
+        <h5 class="happening-text-2">Kerala</h5>
+        <a href="happeningviewdetails1"><button class="happening-button">VIEW DETAILS</button></a>
+      </div>
+      <div class="item">
+        <img src="C:\Users\USER\Desktop\gaurav main project o - level\O-level images\cq5dam.web.512.512 (1).jpeg" style="width: 100%; height: 320px" alt="">
+        <h4 class="happening-text-1">The Yellow House, Anjuna – IHCL <br>SeleQtions</h4>
+        <h5 class="happening-text-2">Goa</h5>
+        <a href="happeningviewdetails2"><button class="happening-button">VIEW DETAILS</button></a>
+      </div>
+      <div class="item">
+        <img src="C:\Users\USER\Desktop\gaurav main project o - level\O-level images\cq5dam.web.512.512 (2).jpeg" style="width: 100%; height: 320px" alt="">
+        <h4 class="happening-text-1">Taj Amer, Jaipur</h4>
+        <h5 class="happening-text-2">Jaipur</h5>
+        <a href="happeningviewdetails3"><button class="happening-button">VIEW DETAILS</button></a>
+      </div>
+      <div class="item">
+        <img src="C:\Users\USER\Desktop\gaurav main project o - level\O-level images\cq5dam.web.512.512 (3).jpeg" style="width: 100%; height: 320px" alt="">
+        <h4 class="happening-text-1">Sawai Man Mahal</h4>
+        <h5 class="happening-text-2">Jaipur</h5>
+        <a href="happeningviewdetails4"><button class="happening-button">VIEW DETAILS</button></a>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+ 
+  
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:40,
+    nav:true,
+    dots:false,
+    navText: ["<div class='fa fa-angle-left' style='font-size:45px; color:#805500'></i>", "<i class='fa fa-angle-right' style='font-size:45px; color:#805500'></div>"],
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:2
+        },
+        1000:{
+            items:2
+        }
+    }
+})
+</script>
+
+</div>
+
+
+<br>
+
+<!----End happening images Slider---->
+
+<!----Start EXPLORE of TAJ images---->
+
+
+
+
+
+
+
+
+  
+<!----End EXPLORE of TAJ images---->
+
+
+
+<!----Start OUR ANCILLARY SERVICES---->
+
+
+
+  <div>
+    <div class="ancillary-services">
+      <h1>OUR ANCILLARY SERVICES</h1>
+    </div>
+
+
+    <div class="ancillary-services1">
+      <a href="ancillaryservices1"><img src="C:\Users\USER\Desktop\gaurav main project o - level\O-level images\cq5dam.web.1280.1280 (1).jpeg"></a>
+      <p class="ancillary-text1">TIMELESS WEDDINGS</p>
+    </div>
+
+    <div class="ancillary-services2">
+      <a href="ancillaryservices2"><img src="C:\Users\USER\Desktop\gaurav main project o - level\O-level images\cq5dam.web.512.512 (4).png"></a>
+      <p class="ancillary-text2">SPA</p>
+    </div>
+
+    <div class="ancillary-services3">
+      <a href="ancillaryservices3"><img src="C:\Users\USER\Desktop\gaurav main project o - level\O-level images\cq5dam.web.512.512 (5).jpeg"></a>
+      <p class="ancillary-text3">LIFESTYLE MEMBERSHIP</p>
+    </div>
+
+    <div class="ancillary-services4">
+      <a href="ancillaryservices4"><img src="C:\Users\USER\Desktop\gaurav main project o - level\O-level images\Heritage.jpg"></a>
+      <p class="ancillary-text4">MEETINGS AND EVENTS</p>
+    </div>
+
+    <div class="ancillary-services5">
+      <a href="ancillaryservices5"><img src="C:\Users\USER\Desktop\gaurav main project o - level\O-level images\cq5dam.web.512.512 (6).jpeg"></a>
+      <p class="ancillary-text5">TAJ EXPERIENCE GIFT CARD</p>
+    </div>
+        
+    <div class="ancillary-services6">
+      <a href="ancillaryservices6"><img src="C:\Users\USER\Desktop\gaurav main project o - level\O-level images\cq5dam.web.512.512 (7).jpeg"></a>
+      <p class="ancillary-text6">DINING</p>
+    </div>
+  </div>
+
+
+  <!----End OUR ANCILLARY SERVICES---->
+  
+
+<!----Start OUR BRANDS---->
+
+<div>
+  <div class="OURBRANDS">
+    <h1>OUR BRANDS</h1>
+  </div>
+
+  <div class="row">
+    <div class="column">
+     <img src="C:\Users\USER\Desktop\gaurav main project o - level\O-level images\cq5dam.web.756.756.png">
+     <div class="overlay">
+      <div class="overlay-img1"><img src="C:\Users\USER\Desktop\gaurav main project o - level\O-level images\cq5dam.web.141.141.png"></div>
+      <p class="text w3-text-dark-gray">The unrivalled guardian of grandeur, Taj 
+        conjures a panoply of superlatives. With 
+        an art of hospitality that has been 
+        perfected over a century, Taj delivers 
+        unmatched experiences and lasting 
+        memories for guests around the world.</p>
+        <a href="index.html"><button class="ourbrand-button">KNOW MORE</button></a>
+    </div>
+    </div>
+    <div class="column">
+     <img src="C:\Users\USER\Desktop\gaurav main project o - level\O-level images\cq5dam.web.756.756 (5).jpeg">
+     <div class="overlay">
+      <div class="overlay-img2"><img src="C:\Users\USER\Desktop\gaurav main project o - level\O-level images\cq5dam.web.141.141 (1).png"></div>
+      <p class="text w3-text-dark-gray">Celebrating a legacy of time, 
+        a sense of place or a specific theme, 
+        SeleQtions offers a range of marquee hotels 
+        that each boast of distinct and special experiences.</p>
+        <a href="https://www.seleqtionshotels.com"><button class="ourbrand-button1">KNOW MORE</button></a>
+    </div>
+    </div>
+    <div class="column">
+      <img src="C:\Users\USER\Desktop\gaurav main project o - level\O-level images\cq5dam.web.756.756 (6).jpeg">
+      <div class="overlay">
+        <div class="overlay-img3"><img src="C:\Users\USER\Desktop\gaurav main project o - level\O-level images\cq5dam.web.141.141 (2).png"></div>
+        <p class="text w3-text-dark-gray">A distinctive collection of vibrant hotels 
+          that are handpicked for the young, 
+          contemporary achievers of today who 
+          stand apart without being rebels, 
+          and that allow them to discover joie de 
+          vivre.</p>
+          <a href="https://www.vivantahotels.com"><button class="ourbrand-button">KNOW MORE</button></a>
+      </div>
+    </div>
+    <div class="column">
+     <img src="C:\Users\USER\Desktop\gaurav main project o - level\O-level images\cq5dam.web.756.756 (7).jpeg">
+     <div class="overlay">
+      <div class="overlay-img4"><img src="C:\Users\USER\Desktop\gaurav main project o - level\O-level images\cq5dam.web.141.141 (3).png"></div>
+      <p class="text w3-text-dark-gray">Deeply contemporary in spirit, 
+        Ginger caters to those for whom the lines between work and 
+        play are blurred and those who need a hotel as seamless, 
+        flexible and open minded as they are.</p>
+        <a href="https://www.gingerhotels.com"><button class="ourbrand-button2">KNOW MORE</button></a>
+    </div>
+    </div>
+  </div>
+
+
+
+
+ <!----End OUR BRANDS---->
+
+
+
+
+<!----Start Footer---->
+
+<div>
+  <div class="footer-home">
+      <p class="destination-footer">Destinations<button class="plus-btn" onclick="myFunction()" id="myBtn">+</button></p>
+      <span id="dots"></span><span id="more">
+        <div class="col-container">
+          <div class="col">
+            <h5><a href="#"><button class="city-home-button">Agartala</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Agra</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Ahmedabad</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Ajmer</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Amritsar</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Andamans</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Aurangabad</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Bandhavgarh National Park</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Bekal</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Bengaluru</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Bentota</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Bharuch</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Bhopal</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Bhubaneswar</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Cape Town</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Chandigarh</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Chennai</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Chikmagalur</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Chitwan National Park</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Cochin</button></a></h5>        
+          </div>
+        
+          <div class="col">
+            <h5><a href="#"><button class="city-home-button">Coimbatore</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Colombo</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Coonoor</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Coorg</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Corbett National Park</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Darjeeling</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Dharamshala</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Dubai</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Dudhwa National Park</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Dwarka</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Ernakulam</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Faridabad</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Gandhinagar</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Gir</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Goa</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Gondia</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Gurgaon</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Guwahati</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Gwalior</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Haridwar</button></a></h5>        
+          </div>
+          
+           <div class="col">
+            <h5><a href="#"><button class="city-home-button">Hyderabad</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Indore</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Jaipur</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Jamshedpur</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Jodhpur</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Kalinganagar</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Kanha National Park</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Kathmandu</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Katra</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Kerala</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Kolkata</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Kovalam</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Kozhikode</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Kumarakom</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">London</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Lucknow</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Lusaka</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Madurai</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Manali</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Mangalore</button></a></h5>   
+          </div>
+        
+          <div class="col">
+            <h5><a href="#"><button class="city-home-button">Mumbai</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Mysore</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Nashik</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">New Delhi</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">New York City</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Noida</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Ooty</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Panna National Park</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Pantnagar</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Patna</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Pench National Park</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Pondicherry</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Pune</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Rajasthan</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Ranthambor</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Rishikesh</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">San Francisco</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Sanand</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Shillong</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Shimla</button></a></h5>     
+          </div>
+
+
+          <div class="col">
+            <h5><a href="#"><button class="city-home-button">Sikkim</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Sri Lanka</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Srinagar</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Thane</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">The Maldives</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Thimphu</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Tirupati</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Tirupur</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Trivandrum</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Udaipur</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Vadodara</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Vapi</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Varanasi</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Varkala</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Vijaywada</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Visakhapatnam</button></a></h5>
+            <h5><a href="#"><button class="city-home-button">Wayanad</button></a></h5>
+          </div>
+        </div>
+
+        
+      </span>
+      
+      <hr class="solid">
+          
+
+          <div class="footer-next-section">
+            <div class="footer-col-section">
+            <h5><a href="#"><button class="footer-next-section-link">Airline & Frequent Flyer Partners</button></a></h5>
+            <h5><a href="#"><button class="footer-next-section-link">Taj Magazine</button></a></h5>
+            <h5><a href="#"><button class="footer-next-section-link">J Wellness Circle</button></a></h5>
+            <h5><a href="#"><button class="footer-next-section-link">Site Map</button></a></h5>
+            <h5><a href="#"><button class="footer-next-section-link">Terms Of Use</button></a></h5>
+            <h5><a href="#"><button class="footer-next-section-link">Contact Us</button></a></h5>
+          </div>
+
+
+          <div class="footer-col-section">
+            <h5><a href="#"><button class="footer-next-section-link">Accessibility</button></a></h5>
+            <h5><a href="#"><button class="footer-next-section-link">Languages</button></a></h5>
+            <h5><a href="#"><button class="footer-next-section-link">Privacy Policy</button></a></h5>
+            <h5><a href="#"><button class="footer-next-section-link">Press Room</button></a></h5>
+            <h5><a href="#"><button class="footer-next-section-link">Careers</button></a></h5>
+            <h5><a href="#"><button class="footer-next-section-link">Blogs</button></a></h5>
+          </div>
+
+
+          <div class="footer-col-section">
+            <h5><a href="https://saathi.qcin.org"><button class="footer-next-section-link">Saathi</button></a></h5>
+            <h5><a href="https://nidhi.nic.in"><button class="footer-next-section-link">Nidhi</button></a></h5>
+            <h5><a href="https://utsav.gov.in"><button class="footer-next-section-link">Utsav</button></a></h5>
+            <h5><a href="https://www.youtube.com/watch?v=E5-8IbPNk4Q"><button class="footer-next-section-link">Incredible India Film</button></a></h5>
+          </div>
+
+
+          <div class="footer-col-section">
+            <h6 class="footer-newsletter">Join our newsletter</h6>
+            <a href="https://www.tajhotels.com/en-in/newsletter/"><button class="footer-newsletter-button">SUBSCRIBE</button></a>
+            <h6 class="footer-connectwith">Connect with us :</h6>
+            <h6 class="footer-facebooklink"><a href="https://www.facebook.com/TajHotels/?sessionId=e246ac94-f9b5-420f-bc4e-6a06d5637603.f9dfc7bd-e19e-4c98-8545-6c6d82928ca9&jarvisId=cea87106-a612-4772-889a-4d69fc9109af"><button class="fa fa-facebook"></button></a></h6>
+          </div>
+
+
+          <div class="footer-col-section">
+            <h6 class="footer-instagramlink"><a href="https://instagram.com/gaurav_mishra.92?igshid=MzMyNGUyNmU2YQ==https://instagram.com/gaurav_mishra.92?igshid=MzMyNGUyNmU2YQ=="><img src="C:\Users\USER\Desktop\gaurav main project o - level\O-level images\Instagram_logo_2016.svg.webp"></a></h6>
+          </div>
+
+          <div class="footer-col-section">
+            <h6 class="footer-twitterlink"><a href="#"><button class="fa fa-twitter"></button></a></h6>
+          </div>
+
+          <div class="footer-col-section">
+            <h6 class="footer-youtubelink"><a href="https://www.youtube.com/user/TajMovies"><img src="C:\Users\USER\Desktop\gaurav main project o - level\O-level images\youtube.png"></a></h6>
+          </div>
+
+        </div>
+
+
+        <hr class="solid">
+
+
+        <h6 class="footer-ihcllink"><a href="https://www.ihcltata.com/?sessionId=e246ac94-f9b5-420f-bc4e-6a06d5637603.f9dfc7bd-e19e-4c98-8545-6c6d82928ca9&jarvisId=cea87106-a612-4772-889a-4d69fc9"><img src="C:\Users\USER\Desktop\gaurav main project o - level\O-level images\ihcl-logo.svg"></a></h6>
+        <p class="footer-22allrightsreserved">©2022 The Indian Hotels Company Limited. All Rights Reserved.</p>
+
+       
+          <div class="footer-ourbrand-hotelsname">
+          <p>Our Brands:</p>
+          <div class="footer-ourbrandimg">
+          <p class="footer-ourbrandimg-1"><a href="index.html"><img src="C:\Users\USER\Desktop\gaurav main project o - level\O-level images\logo--Taj.png"></a></p>
+          <p class="footer-ourbrandimg-2"><a href="https://www.seleqtionshotels.com"><img src="C:\Users\USER\Desktop\gaurav main project o - level\O-level images\cq5dam.web.141.141 (1).png"></a></p>
+          <p class="footer-ourbrandimg-3"><a href="https://www.gingerhotels.com"><img src="C:\Users\USER\Desktop\gaurav main project o - level\O-level images\gingerLogo.png"></a></p>
+          <p class="footer-ourbrandimg-4"><a href="https://www.vivantahotels.com"><img src="C:\Users\USER\Desktop\gaurav main project o - level\O-level images\icon-vivanta.png"></a></p>
+        </div>
+
+
+          </div>
+        
+
+   
+    </div>
+
+
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "+"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "-"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+  
+</div>
+
+
+
+  <!----End Footer---->
+
+
+
+  
+
+</body>
+</html>
+
+
+
+
+

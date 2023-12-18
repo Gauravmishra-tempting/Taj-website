@@ -1,0 +1,49 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;;
+}
+
+.iframe-list-map{
+    list-style: none;
+    line-height: 2.5;
+ }
+ li img{
+    width: 80px;
+    height: 60px;
+ }
+
+ a .iframelist{
+    color: rgb(63, 63, 63);
+    margin-top: -70px;
+    margin-left: 21%;
+    font-weight: bold;
+ }
+
+.tajhotel1otherhotel1{
+   margin-left: 95px;
+   font-size: 12px;
+   margin-top: -25px;
+   color: rgb(93, 93, 93);
+}
+
+/*-------scrollbar-----*/
+
+.example {
+   width: 500px;
+   height: 500px;
+   overflow-y: scroll; /* Add the ability to scroll */
+ }
+ 
+ /* Hide scrollbar for Chrome, Safari and Opera */
+ .example::-webkit-scrollbar {
+     display: none;
+ }
+ 
+ /* Hide scrollbar for IE, Edge and Firefox */
+ .example {
+   -ms-overflow-style: none;  /* IE and Edge */
+   scrollbar-width: none;  /* Firefox */
+ }
+
+ 

@@ -1,0 +1,72 @@
+.booking-form {
+    width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+    background: lightgrey;
+  }
+  
+  div.elem-group {
+    margin: 20px 0;
+  }
+  
+  div.elem-group.inlined {
+    width: 49%;
+    display: inline-block;
+    float: left;
+    margin-left: 1%;  
+  }
+  
+  label {
+    display: block;
+    font-family: sans-serif;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+    font-family: bold;
+  }
+  
+  input, select, textarea {
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 1em;
+    font-family: sans-serif;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: #805500;
+  }
+  
+  div.elem-group.inlined input {
+    width: 95%;
+    display: inline-block;
+  }
+  
+
+  
+  hr {
+    border: 1px dotted #ccc;
+  }
+  
+  button {
+    height: 50px;
+    background: #805500;
+    border: none;
+    color: white;
+    font-size: 1em;
+    font-family: sans-serif;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 0 12px;
+  }
+  
+  ::placeholder{
+    color: #805500;
+  }
+
+ #room-selection option[value=connecting], option[value=adjoining], option[value=adjacent]{
+    color: rgb(6, 6, 6);
+ }
+
+ input[type=date] #checkin-date{
+    color: #805500;
+ }

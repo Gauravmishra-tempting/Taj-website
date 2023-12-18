@@ -1,0 +1,361 @@
+/*-------Start navbar---------*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100&family=Roboto:wght@100;300;400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+    
+nav{
+    background: rgb(255, 255, 255);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    height: 55px;
+    line-height: 55px;
+    cursor: pointer;
+}
+
+nav .wrapper{
+    max-width: 1250px;
+    padding: 0 60px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ .nav-links li a{
+    color: rgb(19, 19, 19);
+    font-size: 12px;
+    letter-spacing: 0.700px;
+    padding: 9px 10px;
+    text-decoration: none;
+ }
+
+ .wrapper .nav-links{
+    display: inline-flex;
+ }
+
+.nav-links .drop-menu{
+    background: rgb(255, 255, 255);
+    width: 190px;
+    top: 55px;
+    line-height: 28px;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 3px;
+}
+
+.drop-menu1:link {
+    text-decoration: none;
+  }
+  
+.drop-menu1:visited {
+    text-decoration: none;
+  }
+  
+.drop-menu1:hover {
+    text-decoration: underline;
+  }
+  
+.drop-menu1:active {
+    text-decoration: underline;
+  }
+
+/*-----------next2-------*/
+
+
+.drop-menu2:link {
+    text-decoration: none;
+  }
+  
+.drop-menu2:visited {
+    text-decoration: none;
+  }
+  
+.drop-menu2:hover {
+    text-decoration: underline;
+  }
+  
+.drop-menu2:active {
+    text-decoration: underline;
+  }
+
+
+  /*-----------next3-------*/
+
+
+.drop-menu3:link {
+    text-decoration: none;
+  }
+  
+.drop-menu3:visited {
+    text-decoration: none;
+  }
+  
+.drop-menu3:hover {
+    text-decoration: underline;
+  }
+  
+.drop-menu3:active {
+    text-decoration: underline;
+  }
+
+
+  /*-----------next4-------*/
+
+
+.drop-menu4:link {
+    text-decoration: none;
+  }
+  
+.drop-menu4:visited {
+    text-decoration: none;
+  }
+  
+.drop-menu4:hover {
+    text-decoration: underline;
+  }
+
+  
+
+.nav-links li:hover .drop-menu{
+    top: 55px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+}
+
+.drop-menu li a{
+    width: 100%;
+    display: block;
+    padding: 0 0 0 15px;
+    font-weight: 400;
+    border-radius: 10px;
+}
+
+.nav-links .mobile-item{
+    display: none;
+}
+
+.wrapper .btn{
+    color: rgb(19, 19, 19);
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+.wrapper .btn.cancel-btn{
+    position: absolute;
+    left: 30px;
+    top: 10px;
+}
+.wrapper input{
+    display: none;
+}
+
+@media screen and (max-width: 970px) {
+    .wrapper .btn{
+        display: block;
+    }
+    .wrapper .nav-links{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        max-width: 350px;
+        background: rgb(255, 255, 255);
+        display: block;
+        top: 0;
+        left: -100%;
+        overflow-y: auto;
+        line-height: 50px;
+        padding: 50px 10px;
+        transition: all 0.3s ease;
+    }
+    #menu-btn:checked ~ .nav-links{
+        left: 0%;
+    }
+    #menu-btn:checked ~ .btn.menu.btn{
+        display: none;
+    }
+    .nav-links::-webkit-scrollbar{
+        width: 0px;
+    }
+
+    .nav-links li{
+        margin: 15px 10px;
+    }
+    .nav-links li a{
+        padding: 0 20px;
+        display: block;
+        font-size: 13px;
+    }
+    .nav-links .drop-menu{
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        top: 55;
+        padding-left: 20px;
+        width: 100%;
+        max-height: 0px;
+        overflow: hidden;
+    }
+    #showdrop:checked ~ .drop-menu{
+        max-height: 100%;
+    }
+    .nav-links .drop-menu li{
+        margin: 0;
+    }
+    .nav-links .drop-menu li a{
+        font-size: 13px;
+        border-radius: 0px;
+    }
+    .nav-links .desktop-item{
+        display: none;
+
+    }
+    .nav-links .mobile-item{
+        display: block;
+        font-size: 13px;
+        font-weight: 500;
+        padding-left: 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+    .wrapper input{
+        display: none;
+    }
+    .primary-button{
+        visibility: hidden;
+    }
+}
+
+.content{
+    height: 400px;
+    width: 750px;
+    overflow: hidden;
+}
+
+.content .image{
+    height: 100%;
+    width: 100%;
+}
+
+.image img{
+    height: 100%;
+    width: 100%;
+}
+
+nav .wrapper .primary-button{
+    font-family: 'Roboto', sans-serif;
+    padding: 8px;
+    background: #805500;
+    font-size: 13px;
+    letter-spacing: 0.700px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/*-------End navbar---------*/
+
+
+
+/* Slideshow container */
+
+
+
+.mySlides {display: none}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+.slideshow-container img{
+  margin-top: 3.5%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 50px;
+  margin-top: -55px;
+  color: white;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 5.5s;
+}
+
+@keyframes fade {
+  from {opacity: 100%} 
+  to {opacity: 10}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next {font-size: 11px}
+}
+
+
+
+
+
+/*-------start text---------*/
+
+
+
+.text-holiday h3{
+    font-weight: bold;
+    text-align: center;
+    color: #343a40;
+}
+
+.paragraph-holiday{
+    width: 70%;
+    margin-left: 17%;
+    height: 60%;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+
+.weddingvideo {
+    background: black;
+    margin-top: 3%;
+    margin-left: 120px;
+    margin-right: 120px;
+    text-align: center;
+    
+}
+
+
+
+
+/*-------End text---------*/
