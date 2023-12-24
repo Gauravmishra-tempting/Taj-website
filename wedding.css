@@ -601,15 +601,11 @@ hr.solid {
     border-radius: 30px;
 }
 
-
-.footer-twitterlink .fa{
-    margin-left: -25px;
-    margin-top: 105px;
-    background: #55ACEE;
-    border: none;
-    color: #fff;
+.footer-twitterlink img{
+    margin-left: -40px;
+    margin-top: 95px;
     font-size: 20px;
-    width: 41px;
+    width: 62px;
     cursor: pointer;
     padding: 10px;
     border-radius: 30px;
@@ -617,7 +613,7 @@ hr.solid {
 
 
 .footer-youtubelink img{
-    margin-left: -1px;
+    margin-left: -10px;
     margin-top: 95px;  
     font-size: 20px;
     width: 62px;
